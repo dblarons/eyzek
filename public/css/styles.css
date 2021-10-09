@@ -22,6 +22,12 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 770px) {
+  .pageContainer {
+    height: 90vh;
+  }
+}
+
 .sectionContainer {
   display: flex;
   flex-flow: row wrap;
