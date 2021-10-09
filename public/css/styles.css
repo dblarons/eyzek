@@ -114,3 +114,8 @@ body {
   color: #000000;
   letter-spacing: 0.53px;
 }
+
+.picture {
+  width: 100%;
+  display: flex;
+}
