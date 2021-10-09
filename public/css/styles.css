@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #FFFFFF;
   height: 100%;
   margin: 0;
 }
@@ -12,130 +12,105 @@ body {
   display: none;
 }
 
-.page-container {
+.pageContainer {
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  align-items: center;
 }
 
-@media only screen and (max-width: 550px) {
-  .page-container {
-    height: auto;
-    padding: 30px 0 40px 0;
+.sectionContainer {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 60px;
+  row-gap: 10px;
+  align-items: center;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.nameContainer {
+  display: flex;
+  flex: 1 1 auto;
+  width: 240px;
+  max-width: 400px;
+  flex-flow: row wrap;
+  column-gap: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+  .nameContainer {
+    justify-content: center;
+    column-gap: 15px;
   }
 }
 
-.content-container {
+.firstName, .lastName {
+  font: 400 70px "Roboto";
+  letter-spacing: 2px;
+  color: #000000;
+  text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #227DFF;
+}
+
+@media only screen and (max-width: 770px) {
+  .firstName, .lastName {
+    font-size: 50px;
+  }
+}
+
+.resumeContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 800px;
-  margin: 0 60px;
+  max-width: 580px;
 }
 
-@media only screen and (max-width: 550px) {
-  .content-container {
-    height: auto;
-    justify-content: flex-start;
-    margin: 0 30px;
-  }
+.headline {
+  font: 300 16px "Roboto";
+  color: #000000;
+  letter-spacing: 0.67px;
 }
 
-.title {
-  color: #d3d3d3;
-  font-family: 'Merriweather', serif;
-  font-weight: 400;
-}
-
-h1.title {
-  font-size: 55px;
-  margin: 0 0 5px 0;
-}
-
-@media only screen and (max-width: 550px) {
-  h1.title {
-   font-size: 41px;
-   text-align: center;
-   margin: 0;
-  }
-}
-
-h2.title {
-  font-size: 25px;
-  margin: 40px 0 10px 0;
-}
-
-@media only screen and (max-width: 550px) {
-  h2.title {
-   font-size: 23px;
-   text-align: center;
-   margin: 15px 0 5px 0;
-  }
-}
-
-.content {
-  color: #d3d3d3;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-}
-
-@media only screen and (max-width: 550px) {
-  .content {
-     font-size: 15px;
-     text-align: center;
-  }
-}
-
-.link {
-  color: #909090;
-  text-decoration: none;
-  display: inline-block;
-}
-
-p.link {
-  margin: 0px;
-}
-
-.link:hover {
-  color: #d3d3d3;
-}
-
-.links-container {
+.logosContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #DDDDDD;
+  border-bottom: 2px solid #DDDDDD;
+  margin: 15px 0 20px 0;
+  padding: 15px 0;
+  row-gap: 10px;
 }
 
-@media only screen and (max-width: 550px) {
-  .links-container {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+.logo {
+  width: 19%;
 }
 
-.links-content {
-  display: block;
+.unrealLogo {
+  width: 10%;
+}
+
+.itemsContainer {
+  display: flex;
   flex-direction: column;
+  row-gap: 15px;
 }
 
-@media only screen and (max-width: 550px) {
-  .links-content {
-    margin-top: 1px;
-  }
+.itemContainer {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
 }
 
-.arrow {
-  position: relative;
-  left: -25px;
+.date {
+  font: 500 14px "Roboto";
+  color: #000000;
+  letter-spacing: 0.53px;
+  min-width: 130px;
 }
 
-@media only screen and (max-width: 550px) {
-  .arrow-mobile {
-    display: none;
-  }
-
-  .arrow {
-    left: 0;
-  }
+.item {
+  font: 300 14px "Roboto";
+  color: #000000;
+  letter-spacing: 0.53px;
 }
