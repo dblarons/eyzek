@@ -117,6 +117,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .itemContainer {
+    column-gap: 20px;
+  }
+}
+
 .date {
   font: 400 14px "Roboto";
   color: #000000;
@@ -129,6 +135,13 @@ body {
   color: #000000;
   letter-spacing: 0.53px;
   min-width: 130px;
+
+}
+
+@media (max-width: 767px) {
+  .item {
+    min-width: 85px;
+  }
 }
 
 .arrow {
