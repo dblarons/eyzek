@@ -108,18 +108,19 @@ body {
 .itemsContainer {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 20px;
 }
 
 .itemContainer {
   display: flex;
-  column-gap: 40px;
+  column-gap: 30px;
+  row-gap: 5px;
   align-items: center;
 }
 
 @media (max-width: 767px) {
   .itemContainer {
-    column-gap: 20px;
+    flex-wrap: wrap;
   }
 }
 
@@ -130,23 +131,28 @@ body {
   min-width: 130px;
 }
 
-.item {
-  font: 300 14px "Roboto";
-  color: #000000;
-  letter-spacing: 0.53px;
-  min-width: 130px;
-
-}
-
 @media (max-width: 767px) {
-  .item {
-    min-width: 85px;
+  .date {
+    width: 100%;
   }
 }
 
+.company {
+  font: 300 14px "Roboto";
+  color: #000000;
+  letter-spacing: 0.53px;
+  min-width: 210px;
+}
+
+.position {
+  font: 300 14px "Roboto";
+  color: #000000;
+  letter-spacing: 0.53px;
+}
+
 .arrow {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 100%;
   transform: translate(0%, -100%)
