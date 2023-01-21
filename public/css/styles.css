@@ -162,3 +162,7 @@ body {
   width: 100%;
   display: flex;
 }
+
+.picture + .picture {
+  margin-top: 2px;
+}
