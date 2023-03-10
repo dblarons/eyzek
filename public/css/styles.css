@@ -8,6 +8,16 @@ body {
   margin: 0;
 }
 
+/* Hide scrollbars in Safari */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbars in Webkit */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -150,19 +160,45 @@ body {
   letter-spacing: 0.53px;
 }
 
-.arrow {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 100%;
-  transform: translate(0%, -100%)
-}
-
 .picture {
   width: 100%;
   display: flex;
 }
 
-.picture + .picture {
-  margin-top: 2px;
+.tilesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  column-gap: 2px;
+  row-gap: 2px;
+}
+
+.tilesContainer:not(:last-child) {
+  padding-bottom: 100px
+}
+
+.textTile, .pictureTile {
+  flex: 40%;
+}
+
+@media (max-width: 767px) {
+  .textTile, .pictureTile {
+    flex: 100%;
+  }
+}
+
+.textTile {
+  box-sizing: border-box;
+  color: #000000;
+  font: 300 16px "Roboto";
+  letter-spacing: 0.67px;
+  margin-top: 7px;
+  padding: 30px;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .textTile {
+    padding: 20px
+  }
 }
